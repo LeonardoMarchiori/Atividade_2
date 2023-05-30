@@ -35,6 +35,7 @@
         </constraints>
         <properties>
           <model>
+            <item value=""/>
             <item value="Dolar"/>
             <item value="Euro"/>
             <item value="Libra"/>

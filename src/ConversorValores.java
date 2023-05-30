@@ -19,16 +19,20 @@ public class ConversorValores extends JFrame{
         respostaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (comboBox1.getSelectedIndex() == 0){
+                if (comboBox1.getSelectedIndex() == 1){
                     Double valor = Double.valueOf(textValor.getText()) * DOLAR;
                     textResultado.setText(valor.toString());
 
-                } else if (comboBox1.getSelectedIndex() == 1) {
+                } else if (comboBox1.getSelectedIndex() == 2) {
                     Double valor = Double.valueOf(textValor.getText()) * EURO;
                     textResultado.setText(valor.toString());
 
-                }else if (comboBox1.getSelectedIndex() == 2){
+                }else if (comboBox1.getSelectedIndex() == 3){
                     Double valor = Double.valueOf(textValor.getText()) * LIBRA;
+                    textResultado.setText(valor.toString());
+
+                }else if (comboBox1.getSelectedIndex() == 0){
+                    Double valor = Double.valueOf(textValor.getText());
                     textResultado.setText(valor.toString());
                 }
 
